@@ -26,7 +26,7 @@ a:focus {
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: 100% 500px;
-	color: white;
+	color: rgb(190, 255, 255);
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -76,7 +76,7 @@ a:focus {
 .tm-btn-white-big {
     font-size: 2.4rem;
     color: white;
-    background-color: #a1c7f1;
+    background-color: #6babf4;
     padding: 0.75rem 2.5rem;
     border-radius: 0.5rem;
 }
@@ -84,7 +84,7 @@ a:focus {
 .tm-btn-white-big:hover,
 .tm-btn-white-big:focus {
 	color: white;
-    background-color: #A2D1FF;
+    background-color: #6361a5;
 }
 
 /* 2. Carousel 
@@ -97,7 +97,7 @@ a:focus {
 }
 
 .tm-carousel-item-title {
-	color: #81b4eb;
+	color: #4e9aec;
 	font-size: 2.1rem;
 	font-weight: 300;
 	margin-bottom: 3rem;
@@ -116,7 +116,7 @@ a:focus {
 }
 
 .carousel-indicators .active {
-	background-color: #81b4eb;
+	background-color: #dcecff;
 	margin: 1px;
 }
 
@@ -174,15 +174,15 @@ a:focus {
 }
 
 .tm-2-col-text-title {
-	color: #81b4eb;
+	color: #4e9aec;
     font-size: 1.9rem;
     font-weight: 300;
     margin-bottom: 5%;    
 }
 
 .tm-2-col-text-description {
-	color: #81b4eb;
-    font-size: 1.4rem;
+	color: #4e9aec;
+    font-size: medium;
     font-weight: 300;
     line-height: 1.9;    
     margin-bottom: 6%;
@@ -240,7 +240,7 @@ a:focus {
 }
 
 .tm-icon-text-box > .fa {
-	color: #81b4eb;
+	color: #4e9aec;
 	margin-bottom: 2rem;
 	width: 100%;
 	text-align: center; /*http://stackoverflow.com/questions/19162889/how-to-center-font-awesome-icons-horizontally*/
@@ -271,7 +271,7 @@ a:focus {
 	padding: .75rem 1.75rem;
 	font-size: 1.2rem;
 	border-radius: 2.5rem;
-	border-color: #68a8e8;
+	border-color: #4e9aec;
 }
 
 .form-control:focus { border-color: #1768A9; }
@@ -298,9 +298,9 @@ textarea.form-control {
 
 .tm-social-icon-link {
 	background-color: transparent;
-	color: #81b4eb;
+	color: #4e9aec;
     padding: 5px;
-    border: 1px solid #68a8e8;
+    border: 1px solid #4e9aec;
     border-radius: 50%;
     margin-right: 2%;
     width: 40px;
@@ -314,7 +314,7 @@ textarea.form-control {
 .tm-social-icon-link:hover,
 .tm-social-icon-link:focus {
 	color: white;
-	background-color: #81b4eb; 
+	background-color: #4e9aec; 
 }
 
 hr { width: 65%; }
