@@ -469,6 +469,13 @@ hr { width: 65%; }
 	}
 }
 
+
+	.tm-section-album {
+		padding-top: 10%;
+    	padding-bottom: 8%;
+		width: 100%;
+	}
+
 /* 5. contact 
 --------------*/
 @media (max-width: 1199px) {
