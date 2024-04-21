@@ -336,18 +336,18 @@ http://www.templatemo.com/tm-484-ocean
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
-                        <form action="index.html" method="post" class="tm-contact-form">                                
+                        <form action="https://sheetdb.io/api/v1/ylxq8gojtffx3" method="post" class="tm-contact-form" id="sheetdb-form">                                 
                             <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-form-group-left">
-                                <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Nama"  required/>
+                                <input type="text" name="data[Nama]" class="form-control" placeholder="Nama"  required/>
                             </div>
                             <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-form-group-right">
-                                <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="No.Telefon"  required/>
+                                <input type="tel" name="data[Telefon]" class="form-control" placeholder="No.Telefon"  required/>
                             </div>
                             <div class="form-group">
-                                <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Sektor : (Pendidikan/Pekerjaan)"  required/>
+                                <input type="text"  name="data[Sektor]" class="form-control" placeholder="Sektor : Nama (Institusi/Syarikat)"  required/>
                             </div>
                             <div class="form-group">
-                                <textarea id="contact_message" name="contact_message" class="form-control" rows="6" placeholder="Hasrat anda" required></textarea>
+                                <textarea  name="data[Hasrat]" class="form-control" rows="6" placeholder="Hasrat anda" required></textarea>
                             </div>
                         
                             <button type="submit" class="btn tm-bordered-btn pull-xs-right">Submit</button>                          
@@ -450,6 +450,22 @@ http://www.templatemo.com/tm-484-ocean
             });
 
         </script>             
+
+        <Script>
+            var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit",e=>{
+            e.preventDefault();
+            fetch(form.action, {
+            method : "post",
+            body: new FormData(document.getElementById("sheetdb-form")),     
+        }).then(
+            Response => Response.json()
+        ).then((html) => {
+            window.open('2nd.html');
+            // window.open('2nd.html','blank');
+        });
+    });
+        </Script>
 
 </body>
 </html>
