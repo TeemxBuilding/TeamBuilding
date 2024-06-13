@@ -286,10 +286,10 @@ http://www.templatemo.com/tm-484-ocean
                         <img src="img/A7.png" alt="Image" class="img-fluid"><br><br>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 tm-2-col-img">                    
-                        <img src="img/A8.png" alt="Image" class="img-fluid"><br><br>
+                        <img src="img/B1.png" alt="Image" class="img-fluid"><br><br>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 tm-2-col-img">                    
-                        <img src="img/A9.png" alt="Image" class="img-fluid"><br><br>
+                        <img src="img/B2.png" alt="Image" class="img-fluid"><br><br>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 tm-2-col-img">                    
                         <img src="img/A10.png" alt="Image" class="img-fluid"><br><br>
@@ -353,16 +353,20 @@ http://www.templatemo.com/tm-484-ocean
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
                         <form action="https://sheetdb.io/api/v1/ylxq8gojtffx3" method="post" class="tm-contact-form" id="sheetdb-form">                                 
                             <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-form-group-left">
-                                <input type="text" name="data[Nama]" class="form-control" placeholder="Nama"  required/>
+                                <label for="Nama">Nama</label>
+                                <input type="text" name="data[Nama]" class="form-control" placeholder="YM. Dato'/Dr./Tuan/Puan"  required/>
                             </div>
                             <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-form-group-right">
-                                <input type="tel" name="data[Telefon]" class="form-control" placeholder="No.Telefon"  required/>
+                                <label for="Telefon">Telefon</label>
+                                <input type="tel" name="data[Telefon]" class="form-control" placeholder="+60 xx-xxx-xxxx"  required/>
                             </div>
                             <div class="form-group">
-                                <input type="text"  name="data[Sektor]" class="form-control" placeholder="Nama (Institusi/Syarikat)"  required/>
+                                <label for="Sektor">Nama Institusi / Organisasi</label>
+                                <input type="text"  name="data[Sektor]" class="form-control" placeholder="Sila isi nama penuh"  required/>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" list="Jenis" placeholder="Program Pilihan (Click Dua Kali Untuk Pemilihan Program)" name="data[Program]" required /></label>
+                                <label for="Program">Program Pilihan</label>
+                                <input class="form-control" list="Jenis" placeholder="Click Dua Kali Untuk Pemilihan Program" name="data[Program]" required /></label>
                                 <datalist id="Jenis">
                                   <option value="Program A">
                                     <option value="Program B">
@@ -370,11 +374,26 @@ http://www.templatemo.com/tm-484-ocean
                                 </datalist>
                               </div>
                             <div class="form-group">
-                                <textarea  name="data[Hasrat]" class="form-control" rows="2" placeholder="Hasrat Anda" required></textarea>
+                                <label for="Hasrat">Hasrat</label>
+                                <textarea  name="data[Hasrat]" class="form-control" rows="2" placeholder="Cadangan dan pendapat tambahan / Soalan" required></textarea>
                             </div>
                             <div class="form-group">
-                                <input type="date" name="data[Date]" placeholder="Tarikh Hantar" class="form-control"></textarea>
+                                <label for="Tarikh">Tarikh Cadangan Kursus</label>
+                                <input type="date" name="data[Tarikh-Event]" placeholder="Tarikh Hantar" class="form-control"></textarea>
                             </div>
+                            <div class="form-group">
+                                <label for="Tarikh">Tarikh Terkini</label>
+                                <input type="date" name="data[Tarikh-Isi]" placeholder="Tarikh Hantar" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="Program">Kaedah Pembayaran</label>
+                                <input class="form-control" list="Bayar" placeholder="Click Dua Kali Untuk Pemilihan Kaedah Pembayaran" name="data[Cara-Bayar]" required /></label>
+                                <datalist id="Bayar">
+                                  <option value="Kaedah A">
+                                    <option value="Kaedah B">
+                                    <option value="Kaedah C">
+                                </datalist>
+                              </div>
                             <button type="submit" class="btn tm-bordered-btn pull-xs-right">Submit</button>                          
                         </form>   
                     </div> <!-- col -->
