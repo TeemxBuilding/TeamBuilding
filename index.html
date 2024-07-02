@@ -19,6 +19,9 @@ http://www.templatemo.com/tm-484-ocean
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css"> <!-- Font Awesome, https://fortawesome.github.io/Font-Awesome/ -->
     <link rel="stylesheet" href="css/bootstrap.min.css">                       <!-- Bootstrap style, http://v4-alpha.getbootstrap.com/ -->
     <link rel="stylesheet" href="css/templatemo-style.css">                    <!-- Templatemo style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -189,7 +192,7 @@ http://www.templatemo.com/tm-484-ocean
                                     <div class="tm-icon-text-box">
                                         <!-- <i class="fa fa-5x fa-line-chart"></i> -->
                                         <h3 class="tm-icon-text-box-title">Inspiration</h3>
-                                        <p class="tm-icon-text-box-description">Perasaan semangat yang anda dapat memberikan anda idea-idea baru dan kreatif.</p>
+                                        <p class="tm-icon-text-box-description">Perasaan semangat yang anda dapat akan memberikan anda idea-idea baru dan kreatif.</p>
                                     </div>
                                 </div>
 
@@ -403,13 +406,23 @@ http://www.templatemo.com/tm-484-ocean
                                 <textarea name="data[Hasrat]" class="form-control" rows="2" placeholder="Cadangan dan pendapat tambahan / Soalan" required></textarea>
                             </div>
                             <div class="form-group">
-                                <label for="Tarikh">Tarikh Cadangan Kursus</label>
-                                <input type="date" name="data[Tarikh-Event]" placeholder="Tarikh Hantar" class="form-control"></textarea>
+                                <label for="Tarikh">Tarikh Cadangan Kursus : Dari</label>
+                                <input type="date" name="data[Tarikh-Event-Mula]" placeholder="Tarikh Hantar" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="Tarikh">Tarikh Cadangan Kursus : Sehingga</label>
+                                <input type="date" name="data[Tarikh-Event-Habis]" placeholder="Tarikh Hantar" class="form-control"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="Tarikh">Tarikh Terkini</label>
                                 <input type="date" name="data[Tarikh-Isi]" placeholder="Tarikh Hantar" class="form-control"></textarea>
                             </div>
+
+                            <div class="form-group">
+                                <label for="dates">Tarikh Cadangan Kursus (Mula & Habis)</label><br>
+                                <input type="text" id="dates" name="dates" class="form-control">
+                            </div>
+
                             <div class="form-group">
                                 <label for="Program">Kaedah Pembayaran</label>
                                 <input class="form-control" list="Bayar" placeholder="Click Dua Kali Untuk Pemilihan Kaedah Pembayaran" name="data[Cara-Bayar]" required />
@@ -422,83 +435,7 @@ http://www.templatemo.com/tm-484-ocean
                             <button type="submit" class="btn tm-bordered-btn pull-xs-right">Submit</button>
                         </form>
                     </div> <!-- col -->
-                    <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
-                        <form action="https://sheetdb.io/api/v1/ylxq8gojtffx3" method="post" class="tm-contact-form" id="sheetdb-form">                                 
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-form-group-left">
-                                <label for="Nama">Nama</label>
-                                <input type="text" name="data[Nama]" class="form-control" placeholder="YM. Dato'/Dr./Tuan/Puan"  required/>
-                            </div>
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-form-group-right">
-                                <label for="Telefon">Telefon</label>
-                                <input type="tel" name="data[Telefon]" class="form-control" placeholder="+60 xx-xxx-xxxx"  required/>
-                            </div>
-                            <div class="form-group">
-                                <label for="Sektor">Nama Institusi / Organisasi</label>
-                                <input type="text"  name="data[Sektor]" class="form-control" placeholder="Sila isi nama penuh"  required/>
-                            </div>
-
-
-                            <form class="form-group">
-                                <label for="Sektor">Program Pilihan</label><br>
-                                <div align="left" style="width:50%;">
-                                    <input type="checkbox" name="data[1]" value="Boat">
-                                    <label for="vehicle3" style="border:ridge; border-radius: 20px; border-color: #4e9aec; border-width: 1px; padding-left: 18px; padding-right: 149px;">Motivasi dan Teambuilding</label><br>
-  
-                                    <input type="checkbox" name="data[2]" value="Boat">
-                                    <label for="vehicle3" style="border:ridge; border-radius: 20px; border-color: #4e9aec; border-width: 1px; padding-left: 18px; padding-right: 50px;">Transformasi Budaya Kerja Cemerlang</label><br>
-
-                                    <input type="checkbox" name="data[3]" value="Boat">
-                                    <label for="vehicle3" style="border:ridge; border-radius: 20px; border-color: #4e9aec; border-width: 1px; padding-left: 18px; padding-right: 25px;">Khalifah Genius - Terapi dan Motivasi Jiwa</label><br>
-
-                                    <input type="checkbox" name="data[4]" value="Boat">
-                                    <label for="vehicle3" style="border:ridge; border-radius: 20px; border-color: #4e9aec; border-width: 1px; padding-left: 18px; padding-right: 75px;">Kepimpinan Pelajar - Super Student </label><br>
-
-                                    <input type="checkbox" name="data[5]" value="Boat">
-                                    <label for="vehicle3" style="border:ridge; border-radius: 20px; border-color: #4e9aec; border-width: 1px; padding-left: 18px; padding-right: 290px;">Family Day</label><br>
-
-                                    <input type="checkbox" name="data[6]" value="Boat">
-                                    <label for="vehicle3" style="border:ridge; border-radius: 20px; border-color: #4e9aec; border-width: 1px; padding-left: 18px; padding-right: 299px;">Sukaneka</label><br>
-
-                                    <input type="checkbox" name="data[7]" value="Boat">
-                                    <label for="vehicle3" style="border:ridge; border-radius: 20px; border-color: #4e9aec; border-width: 1px; padding-left: 18px; padding-right: 170px;">Sukan Indoor & Outdoor</label><br>
-
-                                    <input type="checkbox" name="data[8]" value="Boat">
-                                    <label for="vehicle3" style="border:ridge; border-radius: 20px; border-color: #4e9aec; border-width: 1px; padding-left: 18px; padding-right: 243px;">Supervisory Skill</label><br>
-
-                                    <input type="checkbox" name="data[9]" value="Boat">
-                                    <label for="vehicle3" style="border:ridge; border-radius: 20px; border-color: #4e9aec; border-width: 1px; padding-left: 18px; padding-right: 175px;">Motivasi Keusahawanan</label><br>
-
-                                    <input type="checkbox" name="data[10]" value="Boat">
-                                    <label for="vehicle3" style="border:ridge; border-radius: 20px; border-color: #4e9aec; border-width: 1px; padding-left: 18px; padding-right: 136px;">First Aid, CPR & AED Training</label><br>
-                                    
-                            </form>
-                                </div>
-
-                            <div class="form-group">
-                                <label for="Hasrat">Hasrat</label>
-                                <textarea  name="data[Hasrat]" class="form-control" rows="2" placeholder="Cadangan dan pendapat tambahan / Soalan" required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="Tarikh">Tarikh Cadangan Kursus</label>
-                                <input type="date" name="data[Tarikh-Event]" placeholder="Tarikh Hantar" class="form-control"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="Tarikh">Tarikh Terkini</label>
-                                <input type="date" name="data[Tarikh-Isi]" placeholder="Tarikh Hantar" class="form-control"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="Program">Kaedah Pembayaran</label>
-                                <input class="form-control" list="Bayar" placeholder="Click Dua Kali Untuk Pemilihan Kaedah Pembayaran" name="data[Cara-Bayar]" required /></label>
-                                <datalist id="Bayar">
-                                  <option value="E-Perolehan/Local Order">
-                                    <option value="HRDC sbI-Khas">
-                                    <option value="Dana Syarikat">
-                                </datalist>
-                              </div>
-                            <button type="submit" class="btn tm-bordered-btn pull-xs-right">Submit</button>                          
-                        </form>   
-                    </div> col -->
-                    
+                   
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 tm-contact-right">
                         
                             Email: <a href="mailto:info@company.com">farizvc88@gmail.com</a><br>
@@ -611,6 +548,15 @@ http://www.templatemo.com/tm-484-ocean
         });
     });
         </Script>
-
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            flatpickr("#dates", {
+                mode: "multiple",
+                dateFormat: "Y-m-d",
+                minDate: "today"
+            });
+        });
+    </script>
 </body>
 </html>
