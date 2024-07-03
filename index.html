@@ -406,23 +406,13 @@ http://www.templatemo.com/tm-484-ocean
                                 <textarea name="data[Hasrat]" class="form-control" rows="2" placeholder="Cadangan dan pendapat tambahan / Soalan" required></textarea>
                             </div>
                             <div class="form-group">
-                                <label for="Tarikh">Tarikh Cadangan Kursus : Dari</label>
-                                <input type="date" name="data[Tarikh-Event-Mula]" placeholder="Tarikh Hantar" class="form-control"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="Tarikh">Tarikh Cadangan Kursus : Sehingga</label>
-                                <input type="date" name="data[Tarikh-Event-Habis]" placeholder="Tarikh Hantar" class="form-control"></textarea>
+                                <label for="dates">Tarikh Cadangan Kursus (Mula & Habis)</label><br>
+                                <input type="text" id="dates" name="data[Tarikh-Event]" placeholder="DD/MM/YY - DD/MM/YY" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="Tarikh">Tarikh Terkini</label>
                                 <input type="date" name="data[Tarikh-Isi]" placeholder="Tarikh Hantar" class="form-control"></textarea>
                             </div>
-
-                            <div class="form-group">
-                                <label for="dates">Tarikh Cadangan Kursus (Mula & Habis)</label><br>
-                                <input type="text" id="dates" name="dates" class="form-control">
-                            </div>
-
                             <div class="form-group">
                                 <label for="Program">Kaedah Pembayaran</label>
                                 <input class="form-control" list="Bayar" placeholder="Click Dua Kali Untuk Pemilihan Kaedah Pembayaran" name="data[Cara-Bayar]" required />
@@ -553,7 +543,7 @@ http://www.templatemo.com/tm-484-ocean
         document.addEventListener('DOMContentLoaded', function() {
             flatpickr("#dates", {
                 mode: "multiple",
-                dateFormat: "Y-m-d",
+                dateFormat: "d-m-y",
                 minDate: "today"
             });
         });
