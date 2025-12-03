@@ -10,7 +10,7 @@ body {
 	font-size: 19px;
 	font-weight: 300;
 }
-a { color: #81b4eb;  }
+a { color: rgb(10, 194, 77);  }
 a, button { transition: all 0.3s ease; }
 a:hover,
 a:focus {
@@ -26,7 +26,7 @@ a:focus {
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: 100% 500px;
-	color: rgb(190, 255, 255);
+	color: rgb(149, 255, 188);
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -75,8 +75,8 @@ a:focus {
 
 .tm-btn-white-big {
     font-size: 2.4rem;
-    color: white;
-    background-color: #6babf4;
+    color: rgb(0, 0, 0);
+    background-color: rgb(149, 255, 188);
     padding: 0.75rem 2.5rem;
     border-radius: 0.5rem;
 }
@@ -84,7 +84,7 @@ a:focus {
 .tm-btn-white-big:hover,
 .tm-btn-white-big:focus {
 	color: white;
-    background-color: #6361a5;
+    background-color: rgb(0, 162, 27);
 }
 
 /* 2. Carousel 
@@ -97,7 +97,7 @@ a:focus {
 }
 
 .tm-carousel-item-title {
-	color: #4e9aec;
+	color: rgb(0, 162, 27);
 	font-size: 2.1rem;
 	font-weight: 300;
 	margin-bottom: 3rem;
@@ -106,7 +106,7 @@ a:focus {
 .tm-carousel-item-text {
 	font-size: 1.3rem;
     line-height: 1.6;
-    color: #666;
+    color: rgb(0, 162, 27);
     font-weight: 300;
 }
 
@@ -116,13 +116,13 @@ a:focus {
 }
 
 .carousel-indicators .active {
-	background-color: #dcecff;
+	background-color: rgb(0, 162, 27);
 	margin: 1px;
 }
 
 .carousel-indicators li {
 	background-color: rgb(205, 215, 226);
-	border-color: rgb(205, 215, 226);	
+	border-color: rgb(0, 162, 27);	
 }
 
 .carousel-indicators .active,
@@ -174,14 +174,14 @@ a:focus {
 }
 
 .tm-2-col-text-title {
-	color: #4e9aec;
+	color: rgb(0, 162, 27);
     font-size: 1.9rem;
     font-weight: 300;
     margin-bottom: 5%;    
 }
 
 .tm-2-col-text-description {
-	color: #4e9aec;
+	color: rgb(0, 162, 27);
     font-size: medium;
     font-weight: 300;
     line-height: 1.9;    
@@ -191,9 +191,9 @@ a:focus {
 
 .tm-bordered-btn {
 	background-color: transparent;
-    border: 2px solid #81b4eb;
+    border: 2px solid rgb(0, 162, 27);
     border-radius: 2.5rem;
-    color: #81b4eb;
+    color: #000000;
     display: inline-block;
     font-size: 1.5rem;
     font-weight: 400;
@@ -203,7 +203,7 @@ a:focus {
 .tm-bordered-btn:hover,
 .tm-bordered-btn:focus {
 	color: white;
-	background-color: #81b4eb;
+	background-color: rgb(0, 162, 27);
 }
 
 .tm-2-col-img-lg-left img {
@@ -218,7 +218,7 @@ a:focus {
 	padding-bottom: 6rem;
 }
 
-.tm-blue-bg-row { background-color: #b9d6f4; }
+.tm-blue-bg-row { background-color: rgb(149, 255, 188); }
 
 .tm-section-title {
 	font-size: 2.1rem;
@@ -233,14 +233,14 @@ a:focus {
 }
 
 .tm-icon-text-box {
-	background-color: #d3e6f8;
+	background-color: rgb(79, 221, 131);
 	border: 1px solid white;
 	padding: 3rem;
 	max-width: 400px;	
 }
 
 .tm-icon-text-box > .fa {
-	color: #4e9aec;
+	color: rgb(0, 162, 27);
 	margin-bottom: 2rem;
 	width: 100%;
 	text-align: center; /*http://stackoverflow.com/questions/19162889/how-to-center-font-awesome-icons-horizontally*/
@@ -271,10 +271,10 @@ a:focus {
 	padding: .75rem 1.75rem;
 	font-size: 1.2rem;
 	border-radius: 2.5rem;
-	border-color: #4e9aec;
+	border-color: rgb(0, 162, 27);
 }
 
-.form-control:focus { border-color: #1768A9; }
+.form-control:focus { border-color: rgb(0, 162, 27); }
 
 textarea.form-control {
 	padding-top: 1.15rem;
@@ -298,9 +298,9 @@ textarea.form-control {
 
 .tm-social-icon-link {
 	background-color: transparent;
-	color: #4e9aec;
+	color: rgb(0, 162, 27);
     padding: 5px;
-    border: 1px solid #4e9aec;
+    border: 1px solid rgb(0, 162, 27);
     border-radius: 50%;
     margin-right: 2%;
     width: 40px;
@@ -314,7 +314,7 @@ textarea.form-control {
 .tm-social-icon-link:hover,
 .tm-social-icon-link:focus {
 	color: white;
-	background-color: #4e9aec; 
+	background-color: rgb(149, 255, 188); 
 }
 
 hr { width: 65%; }
